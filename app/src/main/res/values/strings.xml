@@ -1,6 +1,7 @@
 <resources>
-    <string name="app_name">Notepad Kotlin</string>
+    <string name="app_name">Game Backlog</string>
     <string name="action_settings">Settings</string>
+    <string name="action_delete">Delete</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
@@ -11,5 +12,11 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
     <string name="title">My Notepad</string>
-    <string name="last_updated">Last updated: %1$s</string>
+    <string name="release_date">Release: %1$s</string>
+    <string name="field_blank_error">All fields have to be filled in!</string>
+    <string name="title_input">Title</string>
+    <string name="platform_hint">Platform</string>
+    <string name="day_hint">Day</string>
+    <string name="month_hint">Month</string>
+    <string name="year_hint">Year</string>
 </resources>

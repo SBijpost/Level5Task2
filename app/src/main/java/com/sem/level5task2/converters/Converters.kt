@@ -1,4 +1,4 @@
-package com.sem.level5task2
+package com.sem.level5task2.converters
 
 import androidx.room.TypeConverter
 import java.util.*

@@ -3,21 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/notePadFragment">
+    app:startDestination="@id/gameListFragment">
 
     <fragment
-        android:id="@+id/notePadFragment"
-        android:name="com.sem.level5task2.NotepadFragment"
-        android:label="fragment_notepad"
-        tools:layout="@layout/fragment_notepad" >
+        android:id="@+id/gameListFragment"
+        android:name="com.sem.level5task2.ui.GameListFragment"
+        android:label="fragment_gamelist"
+        tools:layout="@layout/fragment_gamelist" >
         <action
             android:id="@+id/action_notepadFragment_to_addNoteFragment"
-            app:destination="@id/addNoteFragment" />
+            app:destination="@id/addGameFragment" />
     </fragment>
     <fragment
-        android:id="@+id/addNoteFragment"
-        android:name="com.sem.level5task2.AddNoteFragment"
-        android:label="fragment_add_note"
-        tools:layout="@layout/fragment_add_note" />
+        android:id="@+id/addGameFragment"
+        android:name="com.sem.level5task2.ui.AddGameFragment"
+        android:label="fragment_add_game"
+        tools:layout="@layout/fragment_add_game" >
+        <action
+            android:id="@+id/action_addNoteFragment_to_notePadFragment"
+            app:destination="@id/gameListFragment" />
+    </fragment>
 
 </navigation>
